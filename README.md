@@ -1,5 +1,5 @@
 <p align="right">
-  <a href="./README.md">English</a> | <b>中文</b>
+  <b>中文</b> | <a href="./README.en.md">English</a>
 </p>
 
 # qt-easy
