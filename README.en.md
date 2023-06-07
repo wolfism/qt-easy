@@ -1,37 +1,86 @@
-# Qt-Easy
+<p align="right">
+  <b>English</b> | <a href="./README_zh.md">中文</a>
+</p>
 
-#### Description
-Qt的工程通用模板，快速创建和部署跨平台应用程序，提高开发效率和质量。包含cmake和qmake工程管理和Windows、Debian、RPM等不同平台和工具的打包示例，动态库、静态库、插件等子项目类型的多级目录结构创建示例，socket、http、dbus、串口、数据库等常用功能和组件的使用示例。
-感谢Bing助手一起创建本项目，欢迎大家建议、反馈、补充和贡献。
+# qt-easy
 
-#### Software Architecture
-Software architecture description
+## Description
 
-#### Installation
+qt-easy is a project that provides examples and templates for creating Qt applications with cmake and qmake. It also includes some common functions and components that can be used in Qt projects, such as socket, http, dbus, serial port, database, etc.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+The motivation of this project is to help Qt developers to quickly start and manage their projects, and to learn some best practices and tips for using Qt. The project also aims to demonstrate how to use different types of sub-projects, such as dynamic library, static library, plug-in, etc.
 
-#### Instructions
+## Table of Contents
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-#### Contribution
+## Installation
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+To use this project, you need to have Qt installed on your system. You can download Qt from the official website: https://www.qt.io/download
 
+You also need to have cmake or qmake installed on your system. You can download cmake from the official website: https://cmake.org/download
 
-#### Gitee Feature
+To clone this project, you can use the following command:
+````
+git clone https://github.com/<your-username>/qt-easy.git
+````
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## Usage
+
+To build and run this project, you can use either cmake or qmake.
+
+If you use cmake, you can follow these steps:
+
+- Create a build directory and enter it:
+````
+mkdir build && cd build
+````
+
+- Generate the Makefile with cmake:
+````
+cmake …
+````
+
+- Build the project with make:
+````
+make
+````
+
+- Run the executable file:
+````
+./qtappdemo/qtappdemo
+````
+
+If you use qmake, you can follow these steps:
+
+- Enter the qt-easy directory:
+````
+cd qt-easy
+````
+
+- Generate the Makefile with qmake:
+````
+qmake qt-easy.pro
+````
+
+- Build the project with make:
+````
+make
+````
+
+- Run the executable file:
+````
+./qtappdemo/qtappdemo
+````
+
+## Contributing
+
+We welcome any kind of contribution to this project, whether it is a bug report, a feature request, a code submission, a documentation update, or a feedback. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for more details on how to contribute.
+
+## License
+
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for more information.
+

@@ -1,0 +1,12 @@
+#ifndef QTLIBSODEMO_GLOBAL_H
+#define QTLIBSODEMO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QTLIBSODEMO_LIBRARY)
+#  define QTLIBSODEMO_EXPORT Q_DECL_EXPORT
+#else
+#  define QTLIBSODEMO_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTLIBSODEMO_GLOBAL_H

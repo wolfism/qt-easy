@@ -1,38 +1,85 @@
-# Qt-Easy
+<p align="right">
+  <a href="./README.md">English</a> | <b>中文</b>
+</p>
 
-#### 介绍
-Qt的工程通用模板，快速创建和部署跨平台应用程序，提高开发效率和质量。包含cmake和qmake工程管理和Windows、Debian、RPM等不同平台和工具的打包示例，动态库、静态库、插件等子项目类型的多级目录结构创建示例，socket、http、dbus、串口、数据库等常用功能和组件的使用示例。
-感谢Bing助手一起创建本项目，欢迎大家建议、反馈、补充和贡献。
+# qt-easy
 
-#### 软件架构
-软件架构说明
+## 描述
 
+qt-easy是一个项目，提供了使用cmake和qmake创建Qt应用程序的示例和模板。它还包含了一些可以在Qt项目中使用的常用功能和组件，比如socket, http, dbus, serial port, database等。
 
-#### 安装教程
+这个项目的动机是帮助Qt开发者快速开始和管理他们的项目，以及学习一些使用Qt的最佳实践和技巧。该项目还旨在演示如何使用不同类型的子项目，比如动态库、静态库、插件等。
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 目录
 
-#### 使用说明
+- [安装](#安装)
+- [使用](#使用)
+- [贡献](#贡献)
+- [许可](#许可)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 安装
 
-#### 参与贡献
+要使用这个项目，你需要在你的系统上安装Qt。你可以从官方网站下载Qt：https://www.qt.io/download
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+你还需要在你的系统上安装cmake或qmake。你可以从官方网站下载cmake：https://cmake.org/download
 
+要克隆这个项目，你可以使用以下命令：
+````
+git clone https://github.com/<your-username>/qt-easy.git
+````
 
-#### 特技
+## 使用
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+要构建和运行这个项目，你可以使用cmake或qmake。
+
+如果你使用cmake，你可以按照以下步骤：
+
+- 创建一个构建目录并进入它：
+````
+mkdir build && cd build
+````
+
+- 使用cmake生成Makefile：
+````
+cmake …
+````
+
+- 使用make构建项目：
+````
+make
+````
+
+- 运行可执行文件：
+````
+./qtappdemo/qtappdemo
+````
+
+如果你使用qmake，你可以按照以下步骤：
+
+- 进入qt-easy目录：
+````
+cd qt-easy
+````
+
+- 使用qmake生成Makefile：
+````
+qmake qt-easy.pro
+````
+
+- 使用make构建项目：
+````
+make
+````
+
+- 运行可执行文件：
+````
+./qtappdemo/qtappdemo
+````
+
+## 贡献
+
+我们欢迎任何形式的贡献，无论是报告问题、提出功能、提交代码、更新文档，还是提供反馈。请阅读我们的[CONTRIBUTING.md](CONTRIBUTING.md)文件，了解更多关于如何贡献的细节。
+
+## 许可
+
+这个项目使用ISC许可证。请查看[LICENSE](LICENSE)文件了解更多信息。
